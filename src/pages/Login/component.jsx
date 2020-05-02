@@ -25,7 +25,7 @@ export function LoginPresentation({ dispatchLogin }) {
 
   const loginCallback = useCallback(async () => {
     await dispatchLogin();
-    return history.push(PATHS.DASHBOARD);
+    return history.push(PATHS.PROFILE);
   }, [dispatchLogin, history]);
 
   return (
