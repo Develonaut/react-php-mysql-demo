@@ -53,10 +53,6 @@ $server = new Server([$auth, new Router($routes)]);
 $socket = new \React\Socket\Server('127.0.0.1:8000', $loop);
 // Instruct server to use the designated socket to process connections
 $server->listen($socket);
-// Echos any server connections made.
-$server->on('connection', function (React\Socket\ConnectionInterface $connection) {
-    echo $connection . PHP_EOL;
-});
 // Echos any unhandled Exceptions that may occur on the server.
 $server->on('error', function (Exception $exception) {
     echo $exception->getMessage() . PHP_EOL;
