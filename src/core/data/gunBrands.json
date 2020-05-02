@@ -1,0 +1,474 @@
+[
+  {
+    "Marque": "556 Tactical",
+    "Stands for (named after)": "",
+    "Company": "556 Tactical LLC",
+    "Country": "United States",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "Accurate Armory",
+    "Stands for (named after)": "",
+    "Company": "Accurate Armory LLC",
+    "Country": "United States",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "ADC",
+    "Stands for (named after)": "Armi Dallera Custom",
+    "Company": "Armi Dallera Custom SRL",
+    "Country": "Italy",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "Adcor Defense",
+    "Stands for (named after)": "",
+    "Company": "Adcor Defense",
+    "Country": "United States",
+    "Market": "Civilian, military",
+    "Other products": ""
+  },
+  {
+    "Marque": "Arsenal",
+    "Stands for (named after)": "",
+    "Company": "Arsenal, Inc",
+    "Country": "Bulgaria",
+    "Market": "Civilian, military",
+    "Other products": "Air defense equipment, artillery, munitions, explosives, ED devices, industrial machinery"
+  },
+  {
+    "Marque": "AEK",
+    "Stands for (named after)": "",
+    "Company": "Kovrov Mechanical Plant, Degtyaryov Plant",
+    "Country": "Russia / USSR",
+    "Market": "Combat",
+    "Other products": ""
+  },
+  {
+    "Marque": "Bb",
+    "Stands for (named after)": "",
+    "Company": "Adams Arms",
+    "Country": "United States",
+    "Market": "Civilian, law enforcement, military",
+    "Other products": ""
+  },
+  {
+    "Marque": "Baikal",
+    "Stands for (named after)": "Lake Baikal",
+    "Company": "Izhmekh",
+    "Country": "Russia",
+    "Market": "Civilian, combat",
+    "Other products": "Medical equipment"
+  },
+  {
+    "Marque": "BCM",
+    "Stands for (named after)": "Bravo Company Manufacturing",
+    "Company": "Bravo Company MFG, Inc.",
+    "Country": "United States",
+    "Market": "Civilian, military",
+    "Other products": ""
+  },
+  {
+    "Marque": "Benelli",
+    "Stands for (named after)": "",
+    "Company": "Benelli Armi SpA",
+    "Country": "Italy",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Beretta",
+    "Stands for (named after)": "",
+    "Company": "Beretta",
+    "Country": "Italy",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Bersa",
+    "Stands for (named after)": "",
+    "Company": "Bersa",
+    "Country": "Argentina",
+    "Market": "Civilian and military",
+    "Other products": ""
+  },
+  {
+    "Marque": "Blaser",
+    "Stands for (named after)": "",
+    "Company": "Blaser Jagdwaffen GmbH",
+    "Country": "Germany",
+    "Market": "Civilian, law enforcement",
+    "Other products": "Outdoor"
+  },
+  {
+    "Marque": "Browning",
+    "Stands for (named after)": "John Browning",
+    "Company": "Browning Arms Company",
+    "Country": "United States",
+    "Market": "",
+    "Other products": "Outdoor products"
+  },
+  {
+    "Marque": "B&T",
+    "Stands for (named after)": "Karl Brügger & Heinrich Thomet",
+    "Company": "B&T AG",
+    "Country": "Switzerland",
+    "Market": "Civilian, Military",
+    "Other products": "Ammunition, suppressors, clothing"
+  },
+  {
+    "Marque": "Bushmaster",
+    "Stands for (named after)": "",
+    "Company": "Bushmaster Firearms International",
+    "Country": "United States",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Chiappa",
+    "Stands for (named after)": "Ezechiele Chiappa",
+    "Company": "Chiappa Firearms Ltd.",
+    "Country": "Italy",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "CVA",
+    "Stands for (named after)": "Connecticut Valley Arms",
+    "Company": "BPI Outdoors",
+    "Country": "United States",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "CZ",
+    "Stands for (named after)": "Česká zbrojovka",
+    "Company": "Česká zbrojovka Uherský Brod",
+    "Country": "Czech Republic",
+    "Market": "Civilian, law enforcement, military,",
+    "Other products": ""
+  },
+  {
+    "Marque": "Colt",
+    "Stands for (named after)": "Samuel Colt",
+    "Company": "Colt's Manufacturing Company Colt Defense",
+    "Country": "United States",
+    "Market": "Civilian, law enforcement, military, security",
+    "Other products": ""
+  },
+  {
+    "Marque": "Daniel Defense",
+    "Stands for (named after)": "Marty Daniel",
+    "Company": "Daniel Defense",
+    "Country": "United States",
+    "Market": "Civilian, law enforcement, military, security",
+    "Other products": "Suppressors, rails/handguards, accessories, ammunition, clothing"
+  },
+  {
+    "Marque": "FN",
+    "Stands for (named after)": "Fabrique Nationale",
+    "Company": "Fabrique Nationale d'Armes de Guerre",
+    "Country": "Belgium",
+    "Market": "Civilian, law enforcement, military, security",
+    "Other products": "Airborne weapon pod systems, ammunition, vehicle mounted weapon systems"
+  },
+  {
+    "Marque": "Glock",
+    "Stands for (named after)": "Gaston Glock",
+    "Company": "Glock Ges.m.b.H.",
+    "Country": "Austria",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Heckler & Koch",
+    "Stands for (named after)": "",
+    "Company": "Heckler & Koch",
+    "Country": "Germany",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Henry",
+    "Stands for (named after)": "Benjamin Tyler Henry",
+    "Company": "Henry Repeating Arms",
+    "Country": "United States",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "Horizon Firearms",
+    "Stands for (named after)": "",
+    "Company": "Kaspar",
+    "Country": "United States",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "Ithaca",
+    "Stands for (named after)": "Ithaca, New York",
+    "Company": "Ithaca Acquisition, Inc",
+    "Country": "United States",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "IZh [N 1]",
+    "Stands for (named after)": "",
+    "Company": "Izhmekh",
+    "Country": "Russia / USSR",
+    "Market": "Civilian",
+    "Other products": "Air guns"
+  },
+  {
+    "Marque": "Kel-Tec",
+    "Stands for (named after)": "",
+    "Company": "Kel-Tec CNC Industries Inc.",
+    "Country": "United States",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Kimber",
+    "Stands for (named after)": "",
+    "Company": "Kimber Manufacturing",
+    "Country": "United States",
+    "Market": "Civilian, military & law enforcement",
+    "Other products": ""
+  },
+  {
+    "Marque": "McWhorter Rifles",
+    "Stands for (named after)": "",
+    "Company": "McWhorter Custom Rifles, Inc",
+    "Country": "United States",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "Mossberg",
+    "Stands for (named after)": "",
+    "Company": "O.F. Mossberg & Sons",
+    "Country": "United States",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "MP",
+    "Stands for (named after)": "Mechanical Plant",
+    "Company": "Izhmekh",
+    "Country": "Russia",
+    "Market": "Civilian, combat",
+    "Other products": "Air guns, non-lethal weapons"
+  },
+  {
+    "Marque": "MTs",
+    "Stands for (named after)": "Model' TsKIBa TsKIB's Model",
+    "Company": "TsKIB SOO, Tula Arms Plant",
+    "Country": "Russia / USSR",
+    "Market": "Civilian [N 2]",
+    "Other products": ""
+  },
+  {
+    "Marque": "OTs",
+    "Stands for (named after)": "Obrazets TsKIBa TsKIB's Specimen",
+    "Company": "TsKIB SOO / KBP",
+    "Country": "Russia / USSR",
+    "Market": "Combat",
+    "Other products": ""
+  },
+  {
+    "Marque": "Panther Arms",
+    "Stands for (named after)": "",
+    "Company": "",
+    "Country": "",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Patriot Ordnance Factory",
+    "Stands for (named after)": "",
+    "Company": "POF-USA Patriot Ordnance Factory, Inc.",
+    "Country": "United States",
+    "Market": "Civilian, law enforcement, military, security",
+    "Other products": "Gas-piston-operated weapon systems, firearm accessories, drop-in triggers, patriotic artwork, bolt carriers, bolts, upper receivers, barrel nut heatsinks, E^2 (E-Squared) barrels"
+  },
+  {
+    "Marque": "Proarms",
+    "Stands for (named after)": "",
+    "Company": "Proarms Armory",
+    "Country": "Czech Republic",
+    "Market": "Civilian, law enforcement, military",
+    "Other products": ""
+  },
+  {
+    "Marque": "Remington",
+    "Stands for (named after)": "Eliphalet Remington",
+    "Company": "Remington Arms",
+    "Country": "United States",
+    "Market": "Civilian combat",
+    "Other products": ""
+  },
+  {
+    "Marque": "Ruger",
+    "Stands for (named after)": "William B. Ruger",
+    "Company": "Sturm, Ruger & Co.",
+    "Country": "United States",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Seekins Precision",
+    "Stands for (named after)": "Glen Seekins",
+    "Company": "Seekins Precision",
+    "Country": "United States",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "S&T Motiv",
+    "Stands for (named after)": "",
+    "Company": "S&T Holdings Co Ltd",
+    "Country": "South Korea",
+    "Market": "Military",
+    "Other products": ""
+  },
+  {
+    "Marque": "S&W",
+    "Stands for (named after)": "Horace Smith and Daniel B. Wesson",
+    "Company": "Smith & Wesson",
+    "Country": "United States",
+    "Market": "",
+    "Other products": "Various [N 3] [1]"
+  },
+  {
+    "Marque": "Savage",
+    "Stands for (named after)": "Arthur Savage",
+    "Company": "Savage Arms",
+    "Country": "United States",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "SCCY",
+    "Stands for (named after)": "",
+    "Company": "SCCY Firearms",
+    "Country": "United States",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Seraphim Armoury (SA)",
+    "Stands for (named after)": "",
+    "Company": "Seraphim Armoury Inc.",
+    "Country": "Canada",
+    "Market": "Civilian, law enforcement, military, security",
+    "Other products": "Optics"
+  },
+  {
+    "Marque": "SIG Sauer",
+    "Stands for (named after)": "",
+    "Company": "SIG Sauer",
+    "Country": "Germany / USA",
+    "Market": "Civilian, law enforcement, military, security",
+    "Other products": "Suppressors, optics, ammunition, clothing"
+  },
+  {
+    "Marque": "Springfield (historical)",
+    "Stands for (named after)": "Springfield Illinois armory location",
+    "Company": "Springfield Armory",
+    "Country": "United States",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Springfield (present)",
+    "Stands for (named after)": "",
+    "Company": "Springfield Armory, Inc.",
+    "Country": "United States",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "SR",
+    "Stands for (named after)": "Spetsial'naya Razrabotka Special Development",
+    "Company": "TsNIITochMash , TsKIB SOO / KBP , Tula Arms Plant",
+    "Country": "Russia",
+    "Market": "Combat",
+    "Other products": ""
+  },
+  {
+    "Marque": "Steyr",
+    "Stands for (named after)": "Steyr, Austria",
+    "Company": "Steyr Mannlicher",
+    "Country": "Austria",
+    "Market": "Civilian, Combat",
+    "Other products": ""
+  },
+  {
+    "Marque": "STI International",
+    "Stands for (named after)": "Strayer, Tripp International",
+    "Company": "Westwind Investors",
+    "Country": "United States",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "Taurus",
+    "Stands for (named after)": "",
+    "Company": "Taurus",
+    "Country": "Brazil / USA",
+    "Market": "Civilian and military",
+    "Other products": ""
+  },
+  {
+    "Marque": "TOZ",
+    "Stands for (named after)": "",
+    "Company": "Tula Arms Plant",
+    "Country": "Russia / USSR",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "UWS",
+    "Stands for (named after)": "",
+    "Company": "Unified Weapons Systems",
+    "Country": "United States",
+    "Market": "Military, law enforcement",
+    "Other products": ""
+  },
+  {
+    "Marque": "Walther Arms",
+    "Stands for (named after)": "Carl Walther",
+    "Company": "Carl Walther GmbH Sportwaffen",
+    "Country": "Germany",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Weatherby",
+    "Stands for (named after)": "Roy Weatherby",
+    "Company": "Weatherby",
+    "Country": "United States",
+    "Market": "Civilian",
+    "Other products": ""
+  },
+  {
+    "Marque": "Winchester",
+    "Stands for (named after)": "Oliver Winchester",
+    "Company": "Winchester Repeating Arms Company",
+    "Country": "United States Belgium",
+    "Market": "",
+    "Other products": ""
+  },
+  {
+    "Marque": "Zastava Arms",
+    "Stands for (named after)": "Zastava Oružje",
+    "Company": "Zastava Arms",
+    "Country": "Serbia",
+    "Market": "",
+    "Other products": ""
+  }
+]

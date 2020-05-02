@@ -1,0 +1,9 @@
+import React from "react";
+import { render } from "@testing-library/react";
+import {{pascalCase name}}{{#if isContained}}Presentation{{/if}} from
+"./component";
+
+test("Trying to render <{{pascalCase name}}{{#if
+  isContained}}Presentation{{/if}}/>", () => {
+  render(<{{pascalCase name}}{{#if isContained}}Presentation{{/if}} />);
+    });

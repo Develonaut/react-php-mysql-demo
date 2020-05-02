@@ -1,0 +1,37 @@
+import React from "react";
+import { useStyles } from "./styles";
+{{#if isContained}}
+import { connect } from "react-redux";
+{{/if}}
+{{#if isMUIPrimitive}}
+import * as MUI from "@material-ui/core"
+{{/if}}
+
+{{#if isContained}}
+{{#if isMUIPrimitive}}
+function {{pascalCase name}}Presentation({ children, ...restProps }) {
+{{else}}
+function {{pascalCase name}}Presentation() {
+{{/if}}
+{{else}}
+{{#if isMUIPrimitive}}
+export function {{pascalCase name}}({ children, ...restProps }) {
+{{else}}
+function {{pascalCase name}}() {
+{{/if}}
+{{/if}}
+  const classes = useStyles();
+{{#if isMUIPrimitive}}
+  return <MUI.{{pascalCase name}} className={classes.root} {...restProps}>{children}</MUI.{{pascalCase name}}>;
+{{else}}
+  return <div className={classes.root}>{{pascalCase name}}</div>;
+{{/if}}
+}
+
+{{#if isContained}}
+const mapStateToProps = (state) => ({});
+const mapDispatchToProps = {};
+
+export const {{pascalCase name}} = connect(mapStateToProps,
+mapDispatchToProps)({{ pascalCase name}}Presentation)
+{{/if}}
