@@ -4,10 +4,10 @@ namespace App;
 
 use RuntimeException;
 
-final class UserNotFoundError extends RuntimeException
+final class UserNotFoundException extends RuntimeException
 {
     public function __construct($message = 'User not found')
     {
-       parent::__construct($message);
+        parent::__construct($message);
     }
 }

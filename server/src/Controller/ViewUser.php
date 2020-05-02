@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\JsonResponse;
-use App\UserNotFoundError;
+use App\UserNotFoundException;
 use App\Users;
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -18,12 +18,12 @@ final class ViewUser
 
     public function __invoke(ServerRequestInterface $request, string $id)
     {
-        return $this->users->find($id)
+        return $this->users->findById($id)
             ->then(
                 function (array $user) {
                     return JsonResponse::ok($user);
                 },
-                function (UserNotFoundError $error) {
+                function (UserNotFoundException $error) {
                     return JsonResponse::notFound($error->getMessage());
                 }
             );

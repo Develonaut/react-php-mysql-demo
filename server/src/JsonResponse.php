@@ -33,6 +33,11 @@ final class JsonResponse extends Response
         return new self(400, ['error' => $error]);
     }
 
+    public static function unauthorized(): self
+    {
+        return new self(401);
+    }
+
     public static function notFound(string $error): self
     {
         return new self(404, ['error' => $error]);

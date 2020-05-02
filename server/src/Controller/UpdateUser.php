@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use App\JsonResponse;
-use App\UserNotFoundError;
+use App\UserNotFoundException;
 use App\Users;
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -28,7 +28,7 @@ final class UpdateUser
                 function () {
                     return JsonResponse::noContent();
                 },
-                function (UserNotFoundError $error) {
+                function (UserNotFoundException $error) {
                     return JsonResponse::notFound($error->getMessage());
                 }
             );
