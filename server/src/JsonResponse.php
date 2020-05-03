@@ -8,9 +8,16 @@ final class JsonResponse extends Response
 {
     public function __construct(int $statusCode, $data = null)
     {
-        $body = $data ? json_encode($data) : null;
+        // CORS Headers
+        $headers = [
+            'Content-Type' => 'application/json',
+            'Access-Control-Allow-Origin' => '*',
+            'Access-Control-Allow-Methods' => "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+            'Access-Control-Allow-Headers' => 'Origin, Content-Type, X-Auth-Token'
+        ];
 
-        parent::__construct($statusCode, ['Content-Type' => 'application/json'], $body);
+        $body = $data ? json_encode($data) : null;
+        parent::__construct($statusCode, $headers, $body);
     }
 
     public static function ok($data = null): self

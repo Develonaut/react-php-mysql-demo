@@ -9,13 +9,13 @@ import { PersistGate } from "redux-persist/integration/react";
 import "index.css";
 
 const history = createBrowserHistory();
-const { persistor, store } = configureStore({
+const { persistor: persister, store } = configureStore({
   history
 });
 
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate persistor={persistor}>
+    <PersistGate persistor={persister}>
       <App history={history} />
     </PersistGate>
   </Provider>,

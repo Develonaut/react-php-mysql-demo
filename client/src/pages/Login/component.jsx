@@ -1,6 +1,6 @@
 import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import { buildUrl, PATHS } from "core/config/urls";
-import { login } from "core/store/actions/UserActions";
+import { attemptLogin } from "core/store/actions/UserActions";
 import React, { useCallback } from "react";
 import { connect } from "react-redux";
 import { useHistory } from "react-router-dom";
@@ -19,14 +19,22 @@ const initialValues = {
   remme: false
 };
 
-export function LoginPresentation({ dispatchLogin }) {
+export function LoginPresentation({ dispatchAttemptLogin }) {
   const history = useHistory();
   const classes = useStyles();
 
-  const loginCallback = useCallback(async () => {
-    await dispatchLogin();
-    return history.push(PATHS.PROFILE);
-  }, [dispatchLogin, history]);
+  const loginCallback = useCallback(
+    async (values, helpers) => {
+      try {
+        await dispatchAttemptLogin(values);
+        return history.push(PATHS.PROFILE);
+      } catch (error) {
+        // Show Invalid User Message Here
+        helpers.setSubmitting(false);
+      }
+    },
+    [dispatchAttemptLogin, history]
+  );
 
   return (
     <Grid container component="main" className={classes.root}>
@@ -72,11 +80,6 @@ export function LoginPresentation({ dispatchLogin }) {
             </Button>
           </Form>
           <Grid container>
-            <Grid item xs>
-              <Link to="#" variant="body2">
-                <Typography value="Forgot password?" />
-              </Link>
-            </Grid>
             <Grid item>
               <Link
                 to={buildUrl({
@@ -95,7 +98,7 @@ export function LoginPresentation({ dispatchLogin }) {
 }
 
 const mapDispatchToProps = {
-  dispatchLogin: login
+  dispatchAttemptLogin: attemptLogin
 };
 
 export const Login = connect(null, mapDispatchToProps)(LoginPresentation);

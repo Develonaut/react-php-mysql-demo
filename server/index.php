@@ -50,7 +50,7 @@ $auth = new Guard('/users', $authenticator);
 // Init the server with the Auth and Router middleware to handle requests,
 $server = new Server([$auth, new Router($routes)]);
 // Init a socket with the established event loop.
-$socket = new \React\Socket\Server('127.0.0.1:8000', $loop);
+$socket = new \React\Socket\Server(8000, $loop);
 // Instruct server to use the designated socket to process connections
 $server->listen($socket);
 // Echos any unhandled Exceptions that may occur on the server.

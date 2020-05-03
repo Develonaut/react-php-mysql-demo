@@ -2,12 +2,10 @@ import AccountCircle from "@material-ui/icons/AccountCircle";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { IconButton } from "common";
-import { PATHS } from "core/config/urls";
 import { logout } from "core/store/actions/UserActions";
 import React from "react";
 import { connect } from "react-redux";
 import { Menu, MenuItem } from "@material-ui/core";
-import { Link } from "react-router-dom";
 import { useStyles } from "./styles";
 
 function UserMenuPresentation({ dispatchLogout }) {
@@ -54,12 +52,6 @@ function UserMenuPresentation({ dispatchLogout }) {
         open={!!anchorEl}
         onClose={handleClose}
       >
-        <MenuItem to={PATHS.DASHBOARD} component={Link} onClick={handleClose}>
-          Dashboard
-        </MenuItem>
-        <MenuItem to="#" component={Link} onClick={handleClose}>
-          Storefront
-        </MenuItem>
         <MenuItem onClick={handleLogout}>Logout</MenuItem>
       </Menu>
     </div>

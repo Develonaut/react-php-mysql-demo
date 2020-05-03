@@ -1,11 +1,10 @@
 import Grid from "@material-ui/core/Grid";
-import { AppBar, Button, ElevationScroll, Logo, Toolbar } from "common";
+import { AppBar, Button, ElevationScroll, Toolbar } from "common";
 import { PATHS } from "core/config/urls";
 import { getIsAuthenticated } from "core/store/selectors/UserSelectors";
 import { UserMenu } from "features/UserMenu";
 import React from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
 import { useStyles } from "./styles";
 
 function HeaderPresentation({ isAuthenticated }) {
@@ -16,11 +15,6 @@ function HeaderPresentation({ isAuthenticated }) {
       <AppBar className={classes.root} color="primary" position="sticky">
         <Toolbar>
           <Grid container spacing={1} alignContent="space-between">
-            <Grid item xs={2}>
-              <Link to={PATHS.HOME}>
-                <Logo />
-              </Link>
-            </Grid>
             <Grid item xs />
             <Grid item container xs={2} justify="flex-end">
               {isAuthenticated && <UserMenu />}

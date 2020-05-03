@@ -1,5 +1,5 @@
 import { PATHS } from "core/config/urls";
-import { Profile, Login, SignUp } from "pages";
+import { Profile, Login, Signup } from "pages";
 
 export const routes = [
   {
@@ -23,7 +23,7 @@ export const routes = [
     key: "signup",
     path: PATHS.SIGN_UP,
     page: {
-      Component: SignUp,
+      Component: Signup,
       props: {}
     }
   }
