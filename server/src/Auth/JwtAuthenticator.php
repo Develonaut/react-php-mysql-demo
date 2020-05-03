@@ -45,11 +45,14 @@ final class JwtAuthenticator
         return null;
     }
 
-    public function authenticate(string $email): PromiseInterface
+    public function authenticate(string $email, string $password): PromiseInterface
     {
         return $this->users->findByEmail($email)
             ->then(
-                function (array $user) {
+                function (array $user) use ($password) {
+                    if ($password !== $user['password']) {
+                        return '';
+                    }
                     return $this->encoder->encode(['id' => $user['id']]);
                 },
                 function (Exception $exception) {

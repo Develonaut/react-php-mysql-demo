@@ -37,8 +37,8 @@ $authenticator = new JwtAuthenticator(new JwtEncoder(JWT_SECRET), $users);
 $routes = new RouteCollector(new Std(), new GroupCountBased());
 // Add routes related ot user actions.
 $routes->post('/login', new Login($authenticator));
+$routes->post('/signup', new CreateUser($authenticator, $users));
 $routes->get('/users', new ListUsers($users));
-$routes->post('/users', new CreateUser($users));
 $routes->get('/users/{id}', new ViewUser($users));
 $routes->put('/users/{id}', new UpdateUser($users));
 $routes->delete('/users/{id}', new DeleteUser($users));

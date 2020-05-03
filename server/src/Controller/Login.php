@@ -18,25 +18,25 @@ final class Login
 
     public function __invoke(ServerRequestInterface $request)
     {
-        $email = $this->extractEmail($request);
-        if ($email === null) {
-            return JsonResponse::badRequest("Field 'email' is required");
+        $params = json_decode((string)$request->getBody(), true);
+        $email = $params['email'] ?? '';
+        $password = $params['password'] ?? '';
+
+        if (empty($email) || empty($password)) {
+            return JsonResponse::badRequest("Missing required fields");
         }
 
-        return $this->authenticator->authenticate($email)
+        return $this->authenticator->authenticate($email, $password)
             ->then(
                 function (string $token) {
+                    if (empty($token)) {
+                        return JsonResponse::badRequest("Invalid User Credentials");
+                    }
                     return JsonResponse::ok(['token' => $token]);
                 },
-                function (UserNotFoundException $error) {
+                function () {
                     return JsonResponse::unauthorized();
-                });
-    }
-
-    private function extractEmail(ServerRequestInterface $request): ?string
-    {
-        $params = json_decode((string)$request->getBody(), true);
-
-        return $params['email'] ?? '';
+                }
+            );
     }
 }

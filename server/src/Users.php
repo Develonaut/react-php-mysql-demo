@@ -15,18 +15,9 @@ final class Users
         $this->db = $db;
     }
 
-    public function all(): PromiseInterface
-    {
-        return $this->db
-            ->query('SELECT id, name, email FROM users ORDER BY id')
-            ->then(function (QueryResult $queryResult) {
-                return $queryResult->resultRows;
-            });
-    }
-
     private function find(string $key, string $value): PromiseInterface
     {
-        $query = "SELECT id, name, email FROM users WHERE $key = ?";
+        $query = "SELECT * FROM users WHERE $key = ?";
         return $this->db
             ->query($query, [$value])
             ->then(function (QueryResult $result) {
@@ -53,6 +44,16 @@ final class Users
         return $this->find('id', $id);
     }
 
+    public function all(): PromiseInterface
+    {
+        $query = 'SELECT * FROM users ORDER BY id';
+        return $this->db
+            ->query($query)
+            ->then(function (QueryResult $queryResult) {
+                return $queryResult->resultRows;
+            });
+    }
+
     public function update(string $id, string $newName): PromiseInterface
     {
         return $this->findById($id)
@@ -63,8 +64,9 @@ final class Users
 
     public function delete(string $id): PromiseInterface
     {
+        $query = 'DELETE FROM users WHERE id = ?';
         return $this->db
-            ->query('DELETE FROM users WHERE id = ?', [$id])
+            ->query($query, [$id])
             ->then(
                 function (QueryResult $result) {
                     if ($result->affectedRows === 0) {
@@ -74,12 +76,13 @@ final class Users
             );
     }
 
-    public function create(string $name, string $email): PromiseInterface
+    public function create(string $name, string $email, string $password): PromiseInterface
     {
+        $query = 'INSERT INTO users(name, email, password) VALUES (?, ?, ?)';
         return $this->db
-            ->query('INSERT INTO users(name, email) VALUES (?, ?)', [$name, $email])
+            ->query($query, [$name, $email, $password])
             ->then(null, function () {
-                throw new UserEmailAlreadyExistsException();
+                throw new UserAlreadyExists();
             });
     }
 }
