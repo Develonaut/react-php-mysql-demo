@@ -6,7 +6,7 @@ Thoughts on the exercise:
 
 JWT is really nice to work with and makes it easy to handle and pass around auth tokens. I would like to add a mechanism and an endpoint to keep the token updated as the user is communicating with the API.
 
-Some significant issues would still need addressing, such as sanitizing the user inputs to protect from SQL injections as well as help strengthen different error cases. Although the query method in ReactPHP escapes the queries we use, there are still better ways to handle them.
+Some significant issues would still need addressing, such as sanitizing the user inputs to protect from SQL injections as well as help strengthen different error cases and credential validation. Although the query method in ReactPHP escapes the queries we use, there are still better ways to handle them.
 
 I would like to improve the error messaging relayed from the server. It needs more work, but it wasn't the focus due to spending the majority of my time building the scaffolding of the API itself.
 
